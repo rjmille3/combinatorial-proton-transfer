@@ -569,9 +569,9 @@ def main():
     df = make_dataframe_mp(data, max_workers=args.nprocs)
     print("Total reactions generated:", len(df))
 
-    # keep only plausible rate constants (≥ –1)
-    df = df[df["log(k_1)"] >= -1.0].reset_index(drop=True)
-    print("Entries with log(k_1) ≥ -1:", len(df))
+    # keep only plausible rate constants (>= 3)
+    df = df[df["log(k_1)"] >= 3.0].reset_index(drop=True)
+    print("Entries with log(k_1) >= 3.0:", len(df))
 
     df.to_csv(args.output, index=False)
     print("Written to", args.output)
