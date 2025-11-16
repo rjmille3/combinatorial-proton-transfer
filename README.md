@@ -19,8 +19,8 @@ python gen_rxns.py \
 </pre>
 <pre markdown>
 python gen_rxns_carbon_acid.py \
-       --acid_path      raw_data/16K_Carbon_Acid/Carbon_Acids.csv \
-       --conbase_path   raw_data/16K_Carbon_Acid/R2NH.csv \
+       --acid_path      raw_data/5K_Carbon_Acid/Carbon_Acids.csv \
+       --conbase_path   raw_data/5K_Carbon_Acid/R2NH.csv \
        --base_class     "R2NH" \
        --output         R2NH_combinatorial.csv
 </pre>
